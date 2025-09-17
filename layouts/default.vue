@@ -11,17 +11,17 @@
         'max-sm:hidden': !burger}">
             <NuxtLink to = "/" class = "my-auto p-2 hover:bg-teal-500 hover:text-white max-sm:w-full max-sm:border-b-2
             max-sm:border-black max-sm:text-center">Координаты</NuxtLink>
-            <div class = "my-auto p-2 hover:bg-teal-500 hover:text-white max-sm:w-full max-sm:text-center max-sm:px-0 max-sm:pb-0" @click = "switch_submenu">Гидрология
-              <div class="flex flex-col absolute top-full bg-white text-teal-500 w-56 text-center max-sm:relative max-sm:w-full
+            <div class = "relative my-auto p-2 hover:bg-teal-500 hover:text-white max-sm:w-full max-sm:text-center cursor-pointer" @click = "switch_submenu">Гидрология
+              <div class="flex flex-col absolute left-0 top-full bg-white text-teal-500 w-56 text-center max-sm:relative max-sm:w-full
               max-sm:bg-teal-50 max-sm:text-teal-500" v-show = "submenu">
-                <NuxtLink to = "/Lab3" class = "my-auto p-2 border-b-2 border-black hover:bg-teal-500 hover:text-white
-                max-sm:w-full max-sm:border-t-2 max-sm:text-center">Уровень воды</NuxtLink>
-                <NuxtLink to = "/Lab4" class = "my-auto p-2 border-b-2 border-black hover:bg-teal-500 hover:text-white
-                max-sm:w-full max-sm:border-t-2 max-sm:text-center">Прозрачность</NuxtLink>
-                <NuxtLink to = "/Lab5" class = "my-auto p-2 border-b-2 border-black hover:bg-teal-500 hover:text-white
-                max-sm:w-full max-sm:border-t-2 max-sm:text-center">Температура</NuxtLink>
-                <NuxtLink to = "/Lab6" class = "my-auto p-2 border-b-2 border-black hover:bg-teal-500
-                hover:text-white max-sm:w-full max-sm:border-t-2 max-sm:text-center">Электропроводность</NuxtLink>
+                <NuxtLink to = "/Lab3" class = "p-2 border-b border-teal-400 hover:bg-teal-500 hover:text-white
+                max-sm:w-full max-sm:border-t-2 max-sm:text-center"@click = "submenu = false">Уровень воды</NuxtLink>
+                <NuxtLink to = "/Lab4" class = "p-2 border-b border-teal-400 hover:bg-teal-500 hover:text-white
+                max-sm:w-full max-sm:border-t-2 max-sm:text-center"@click = "submenu = false">Прозрачность</NuxtLink>
+                <NuxtLink to = "/Lab5" class = "p-2 border-b border-teal-400 hover:bg-teal-500 hover:text-white
+                max-sm:w-full max-sm:border-t-2 max-sm:text-center"@click = "submenu = false">Температура</NuxtLink>
+                <NuxtLink to = "/Lab6" class = "p-2 border-b border-teal-400 hover:bg-teal-500
+                hover:text-white max-sm:w-full max-sm:border-t-2 max-sm:text-center"@click = "submenu = false">Электропроводность</NuxtLink>
               </div>
             </div>
             <NuxtLink to = "/inform"
